@@ -17,7 +17,7 @@ public class Crud extends javax.swing.JFrame {
      */
     public Crud() {
         initComponents();
-
+        setLocationRelativeTo(null);
         Funciones.setListar("");
 
         jPopupMenu1.add(menu);
@@ -110,6 +110,9 @@ public class Crud extends javax.swing.JFrame {
         btn_novo.setForeground(new java.awt.Color(255, 255, 255));
         btn_novo.setText("NOVO");
         btn_novo.setToolTipText("REGISTRAR USUARIO");
+        btn_novo.setBorderPainted(false);
+        btn_novo.setFocusPainted(false);
+        btn_novo.setFocusable(false);
         btn_novo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_novoActionPerformed(evt);
@@ -123,6 +126,8 @@ public class Crud extends javax.swing.JFrame {
         btn_fechar.setForeground(new java.awt.Color(255, 255, 255));
         btn_fechar.setText("X");
         btn_fechar.setBorderPainted(false);
+        btn_fechar.setFocusPainted(false);
+        btn_fechar.setFocusable(false);
         btn_fechar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_fecharActionPerformed(evt);
@@ -162,12 +167,16 @@ public class Crud extends javax.swing.JFrame {
         btnDeletarTudo.setForeground(new java.awt.Color(255, 255, 255));
         btnDeletarTudo.setText("DELETAR TUDO");
         btnDeletarTudo.setToolTipText("REGISTRAR USUARIO");
+        btnDeletarTudo.setBorderPainted(false);
+        btnDeletarTudo.setFocusPainted(false);
+        btnDeletarTudo.setFocusable(false);
         btnDeletarTudo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeletarTudoActionPerformed(evt);
             }
         });
 
+        txtBuscar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtBuscarKeyReleased(evt);
@@ -178,7 +187,7 @@ public class Crud extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)
@@ -187,9 +196,9 @@ public class Crud extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnDeletarTudo, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtBuscar))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(txtBuscar)))
                 .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
