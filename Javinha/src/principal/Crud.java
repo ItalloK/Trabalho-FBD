@@ -107,6 +107,9 @@ public class Crud extends javax.swing.JFrame {
         });
         tabla.setAltoHead(30);
         tabla.setColorBackgoundHead(new java.awt.Color(153, 93, 224));
+        tabla.setColorFilasForeground1(new java.awt.Color(0, 0, 0));
+        tabla.setColorFilasForeground2(new java.awt.Color(0, 0, 0));
+        tabla.setColorSelBackgound(new java.awt.Color(153, 90, 147));
         tabla.setComponentPopupMenu(jPopupMenu1);
         tabla.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(tabla);
