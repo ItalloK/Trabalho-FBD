@@ -5,6 +5,8 @@
 package principal;
 
 import javax.swing.JOptionPane;
+import java.awt.Desktop;
+import java.net.URI;
 
 /**
  *
@@ -45,6 +47,7 @@ public class Crud extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         btnDeletarTudo = new javax.swing.JButton();
         txtBuscar = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
 
         btnEditar.setBackground(new java.awt.Color(153, 93, 224));
         btnEditar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -197,11 +200,19 @@ public class Crud extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setText("Creditos");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)
@@ -210,9 +221,11 @@ public class Crud extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnDeletarTudo, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtBuscar)))
+                        .addComponent(txtBuscar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,7 +238,9 @@ public class Crud extends javax.swing.JFrame {
                         .addComponent(btnDeletarTudo, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(txtBuscar))
                 .addGap(14, 14, 14)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 342, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
                 .addContainerGap())
         );
 
@@ -285,6 +300,20 @@ public class Crud extends javax.swing.JFrame {
         Funciones.setListar(this.txtBuscar.getText());
     }//GEN-LAST:event_txtBuscarKeyReleased
 
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        try {
+        // Verifica se o Desktop é suportado na plataforma atual
+        if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+            // Cria o URI do link do GitHub
+            URI uri = new URI("https://github.com/ItalloK");
+            // Abre o link no navegador padrão
+            Desktop.getDesktop().browse(uri);
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    }//GEN-LAST:event_jLabel3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -328,6 +357,7 @@ public class Crud extends javax.swing.JFrame {
     private javax.swing.JButton btn_novo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane1;
