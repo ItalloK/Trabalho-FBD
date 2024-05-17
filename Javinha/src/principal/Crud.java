@@ -15,6 +15,8 @@ public class Crud extends javax.swing.JFrame {
      */
     public Crud() {
         initComponents();
+
+        Funciones.setListar("");
     }
 
     /**
@@ -27,7 +29,7 @@ public class Crud extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        rSTableMetro1 = new rojerusan.RSTableMetro();
+        tabla = new rojerusan.RSTableMetro();
         btn_novo = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         btn_fechar = new javax.swing.JButton();
@@ -35,12 +37,12 @@ public class Crud extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        rSTableMetro1.setModel(new javax.swing.table.DefaultTableModel(
+        tabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "ID", "NOME", "IDADE", "EMAIL"
+                "ID", "NOME", "EMAIL", "IDADE"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -51,10 +53,10 @@ public class Crud extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        rSTableMetro1.setAltoHead(30);
-        rSTableMetro1.setColorBackgoundHead(new java.awt.Color(153, 93, 224));
-        rSTableMetro1.getTableHeader().setReorderingAllowed(false);
-        jScrollPane1.setViewportView(rSTableMetro1);
+        tabla.setAltoHead(30);
+        tabla.setColorBackgoundHead(new java.awt.Color(153, 93, 224));
+        tabla.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(tabla);
 
         btn_novo.setBackground(new java.awt.Color(153, 93, 224));
         btn_novo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -156,7 +158,7 @@ public class Crud extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -186,6 +188,6 @@ public class Crud extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private rojerusan.RSTableMetro rSTableMetro1;
+    public static rojerusan.RSTableMetro tabla;
     // End of variables declaration//GEN-END:variables
 }
