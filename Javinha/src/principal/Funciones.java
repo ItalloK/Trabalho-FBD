@@ -60,7 +60,7 @@ public class Funciones {
         }
     }
     
-    public static boolean isTruncate(Sentencias s) {
+    public static boolean isTruncate() {
         String sql = Sentencias.ELIMINAR_TODOS;
         try {
             ps = connection.prepareStatement(sql); 
