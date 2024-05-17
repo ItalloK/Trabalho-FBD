@@ -53,12 +53,19 @@ public class Crud extends javax.swing.JFrame {
         });
         rSTableMetro1.setAltoHead(30);
         rSTableMetro1.setColorBackgoundHead(new java.awt.Color(153, 93, 224));
+        rSTableMetro1.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(rSTableMetro1);
 
         btn_novo.setBackground(new java.awt.Color(153, 93, 224));
         btn_novo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btn_novo.setForeground(new java.awt.Color(255, 255, 255));
         btn_novo.setText("NOVO");
+        btn_novo.setToolTipText("REGISTRAR USUARIO");
+        btn_novo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_novoActionPerformed(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(153, 93, 224));
 
@@ -67,6 +74,11 @@ public class Crud extends javax.swing.JFrame {
         btn_fechar.setForeground(new java.awt.Color(255, 255, 255));
         btn_fechar.setText("X");
         btn_fechar.setBorderPainted(false);
+        btn_fechar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_fecharActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -123,6 +135,15 @@ public class Crud extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_fecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_fecharActionPerformed
+        this.dispose(); // Fecha o Programa
+    }//GEN-LAST:event_btn_fecharActionPerformed
+
+    private void btn_novoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_novoActionPerformed
+        Formulario f = new Formulario(this, true);
+        f.setVisible(true);
+    }//GEN-LAST:event_btn_novoActionPerformed
 
     /**
      * @param args the command line arguments
