@@ -63,12 +63,12 @@ public class Formulario_Update extends javax.swing.JDialog {
         txtUsuario = new javax.swing.JTextField();
         btnRegistrar = new javax.swing.JButton();
         lblError = new javax.swing.JLabel();
-        txtSenha = new javax.swing.JTextField();
         lblid = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        txtSenha = new javax.swing.JFormattedTextField();
 
         jDialog1.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         jDialog1.setBackground(new java.awt.Color(255, 255, 255));
@@ -236,7 +236,7 @@ public class Formulario_Update extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -277,6 +277,12 @@ public class Formulario_Update extends javax.swing.JDialog {
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/principal/pngegg (5).png"))); // NOI18N
 
+        try {
+            txtSenha.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -296,14 +302,14 @@ public class Formulario_Update extends javax.swing.JDialog {
                         .addComponent(lblError, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel9)
-                            .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNome, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
                             .addComponent(jLabel8)
-                            .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
                             .addComponent(jLabel7)
-                            .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(btnRegistrar, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                            .addComponent(txtSenha))))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -325,8 +331,8 @@ public class Formulario_Update extends javax.swing.JDialog {
                     .addComponent(lblError)
                     .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
+                .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblid)
@@ -466,7 +472,7 @@ public class Formulario_Update extends javax.swing.JDialog {
     private javax.swing.JLabel lblid1;
     public static javax.swing.JTextField txtNome;
     private javax.swing.JTextField txtNome1;
-    public static javax.swing.JTextField txtSenha;
+    public static javax.swing.JFormattedTextField txtSenha;
     private javax.swing.JTextField txtSenha1;
     public static javax.swing.JTextField txtUsuario;
     private javax.swing.JTextField txtUsuario1;
