@@ -150,7 +150,7 @@
                 <Column editable="false" title="ID" type="java.lang.Object"/>
                 <Column editable="false" title="NOME" type="java.lang.Object"/>
                 <Column editable="false" title="EMAIL" type="java.lang.Object"/>
-                <Column editable="false" title="IDADE" type="java.lang.Object"/>
+                <Column editable="false" title="DATA DE NASCIMENTO" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="altoHead" type="int" value="30"/>

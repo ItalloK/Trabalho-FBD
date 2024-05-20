@@ -97,7 +97,7 @@ public class Crud extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "NOME", "EMAIL", "IDADE"
+                "ID", "NOME", "EMAIL", "DATA DE NASCIMENTO"
             }
         ) {
             boolean[] canEdit = new boolean [] {

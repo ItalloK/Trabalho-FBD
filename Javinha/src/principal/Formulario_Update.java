@@ -269,7 +269,7 @@ public class Formulario_Update extends javax.swing.JDialog {
 
         lblid.setText("ID");
 
-        jLabel7.setText("Digite a Idade:");
+        jLabel7.setText("Digite a Data de Nascimento:");
 
         jLabel8.setText("Digite o Email:");
 
@@ -278,7 +278,7 @@ public class Formulario_Update extends javax.swing.JDialog {
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/principal/pngegg (5).png"))); // NOI18N
 
         try {
-            txtSenha.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###")));
+            txtSenha.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
