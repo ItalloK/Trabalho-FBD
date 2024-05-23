@@ -205,9 +205,9 @@ public class Formulario_Update extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(450, 550));
 
-        jPanel1.setBackground(new java.awt.Color(153, 93, 224));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 255));
 
-        jButton1.setBackground(new java.awt.Color(153, 93, 224));
+        jButton1.setBackground(new java.awt.Color(0, 102, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("X");
@@ -250,7 +250,7 @@ public class Formulario_Update extends javax.swing.JDialog {
                 .addGap(0, 6, Short.MAX_VALUE))
         );
 
-        btnRegistrar.setBackground(new java.awt.Color(153, 93, 224));
+        btnRegistrar.setBackground(new java.awt.Color(0, 102, 255));
         btnRegistrar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistrar.setText("SALVAR ALTERAÇÕES");

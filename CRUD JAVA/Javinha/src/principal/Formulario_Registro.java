@@ -60,7 +60,7 @@ public class Formulario_Registro extends javax.swing.JDialog {
         setMinimumSize(new java.awt.Dimension(500, 550));
         setPreferredSize(new java.awt.Dimension(430, 438));
 
-        jPanel1.setBackground(new java.awt.Color(153, 93, 224));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 255));
 
         jButton1.setBackground(new java.awt.Color(153, 93, 224));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -107,7 +107,7 @@ public class Formulario_Registro extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
-        btnRegistrar.setBackground(new java.awt.Color(153, 93, 224));
+        btnRegistrar.setBackground(new java.awt.Color(0, 102, 255));
         btnRegistrar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistrar.setText("REGISTRAR");

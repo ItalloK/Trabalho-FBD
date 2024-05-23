@@ -49,7 +49,7 @@ public class Crud extends javax.swing.JFrame {
         txtBuscar = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
 
-        btnEditar.setBackground(new java.awt.Color(153, 93, 224));
+        btnEditar.setBackground(new java.awt.Color(0, 102, 255));
         btnEditar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnEditar.setForeground(new java.awt.Color(255, 255, 255));
         btnEditar.setText("EDITAR");
@@ -62,7 +62,7 @@ public class Crud extends javax.swing.JFrame {
             }
         });
 
-        btnExcluir.setBackground(new java.awt.Color(153, 93, 224));
+        btnExcluir.setBackground(new java.awt.Color(0, 102, 255));
         btnExcluir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnExcluir.setForeground(new java.awt.Color(255, 255, 255));
         btnExcluir.setText("EXCLUIR");
@@ -109,15 +109,15 @@ public class Crud extends javax.swing.JFrame {
             }
         });
         tabla.setAltoHead(30);
-        tabla.setColorBackgoundHead(new java.awt.Color(153, 93, 224));
+        tabla.setColorBackgoundHead(new java.awt.Color(0, 102, 255));
         tabla.setColorFilasForeground1(new java.awt.Color(0, 0, 0));
         tabla.setColorFilasForeground2(new java.awt.Color(0, 0, 0));
-        tabla.setColorSelBackgound(new java.awt.Color(153, 90, 147));
+        tabla.setColorSelBackgound(new java.awt.Color(102, 153, 255));
         tabla.setComponentPopupMenu(jPopupMenu1);
         tabla.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(tabla);
 
-        btn_novo.setBackground(new java.awt.Color(153, 93, 224));
+        btn_novo.setBackground(new java.awt.Color(0, 102, 255));
         btn_novo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btn_novo.setForeground(new java.awt.Color(255, 255, 255));
         btn_novo.setText("NOVO");
@@ -131,9 +131,9 @@ public class Crud extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(153, 93, 224));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 255));
 
-        btn_fechar.setBackground(new java.awt.Color(153, 93, 224));
+        btn_fechar.setBackground(new java.awt.Color(0, 102, 255));
         btn_fechar.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         btn_fechar.setForeground(new java.awt.Color(255, 255, 255));
         btn_fechar.setText("X");
@@ -178,7 +178,7 @@ public class Crud extends javax.swing.JFrame {
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
-        btnDeletarTudo.setBackground(new java.awt.Color(153, 93, 224));
+        btnDeletarTudo.setBackground(new java.awt.Color(0, 102, 255));
         btnDeletarTudo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnDeletarTudo.setForeground(new java.awt.Color(255, 255, 255));
         btnDeletarTudo.setText("DELETAR TUDO");

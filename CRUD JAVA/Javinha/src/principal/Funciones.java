@@ -85,9 +85,9 @@ public class Funciones {
             sql = Sentencias.LISTAR;
         } else {
             sql = "SELECT * FROM usuarios WHERE ("
-                    + "Nome LIKE'" + buscar + "%' OR "
-                    + "Email LIKE'" + buscar + "%' OR "
-                    + "Idade LIKE'" + buscar + "%'"
+                    + "Nome LIKE'%" + buscar + "%' OR "
+                    + "Email LIKE'%" + buscar + "%' OR "
+                    + "Idade LIKE'%" + buscar + "%'"
                     + ")";
         }
         
