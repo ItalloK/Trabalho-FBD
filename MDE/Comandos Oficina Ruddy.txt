@@ -1,0 +1,19 @@
+-- INSERT INTO Clientes (idClientes, NomeCliente, TelCliente, ClienteVIP) VALUES (1, 'Carlos Silva', '123456789', 0);
+-- INSERT INTO Carros (idCarros, ModeloCarro, PlacaCarro, Clientes_idClientes) VALUES (1, 'Ford Fiesta', 'ABC-1234', 1);
+-- INSERT INTO Funcionarios (idFuncionarios, NomeFuncionario) VALUES (1, 'João Pereira');
+-- INSERT INTO Pecas (idPecas, NomePeca, PrecoPeca) VALUES (1, 'Filtro de óleo', 50.00);
+-- INSERT INTO Servicos (idServicos, TipoDeServico, TempoDoServico, Funcionarios_idFuncionarios, Carros_idCarros, Pecas_idPecas) VALUES (1, 'Troca de óleo', '30 minutos', 1, 1, 1);
+
+
+-- UPDATE Clientes SET NomeCliente = 'Carlos Souza' WHERE idClientes = 1;
+-- UPDATE Carros SET PlacaCarro = 'DEF-5678' WHERE idCarros = 1;
+-- UPDATE Funcionarios SET NomeFuncionario = 'João Oliveira' WHERE idFuncionarios = 1;
+-- UPDATE Pecas SET PrecoPeca = 60.00 WHERE idPecas = 1;
+-- UPDATE Servicos SET TipoDeServico = 'Troca de óleo e filtro', TempoDoServico = '45 minutos' WHERE idServicos = 1;
+
+
+-- DELETE FROM Servicos WHERE idServicos = 1;
+-- DELETE FROM Pecas WHERE idPecas = 1;
+-- DELETE FROM Carros WHERE idCarros = 1;
+-- DELETE FROM Funcionarios WHERE idFuncionarios = 1;
+-- DELETE FROM Clientes WHERE idClientes = 1;
