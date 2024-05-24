@@ -366,6 +366,7 @@ public class Formulario_Update extends javax.swing.JDialog {
             if (Funciones.isUpdate(s)) {
                 setClean();
                 Funciones.setListar("");
+                this.dispose();
                 JOptionPane.showMessageDialog(this, "Dados Atualizados com Sucesso.", "Informação", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 JOptionPane.showMessageDialog(this, "Erro ao Atualizar dados do Usuario.", "Erro", JOptionPane.ERROR_MESSAGE);

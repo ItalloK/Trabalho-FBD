@@ -237,6 +237,7 @@ public class Formulario_Registro extends javax.swing.JDialog {
             if (Funciones.isRegister(s)) {
                 setClean();
                 Funciones.setListar("");
+                this.dispose();
                 JOptionPane.showMessageDialog(this, "Usuario Registrado com Sucesso.", "Informação", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 JOptionPane.showMessageDialog(this, "Erro ao registrar Usuario.", "Erro", JOptionPane.ERROR_MESSAGE);
