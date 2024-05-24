@@ -304,7 +304,6 @@ public class Formulario_Update extends javax.swing.JDialog {
                     .addComponent(btnRegistrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(15, 15, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, 0)
                 .addComponent(lblid)
                 .addGap(51, 51, 51))
         );
@@ -358,6 +357,7 @@ public class Formulario_Update extends javax.swing.JDialog {
             s.setEmail(this.txtUsuario.getText());
             s.setIdade(this.txtSenha.getText());
             s.setEndereco(this.txtEndereco.getText());
+            s.setTelefone(this.txtTelefone.getText());
             
             if (Funciones.isUpdate(s)) {
                 setClean();
@@ -390,6 +390,7 @@ public class Formulario_Update extends javax.swing.JDialog {
             s.setEmail(this.txtUsuario.getText());
             s.setIdade(this.txtSenha.getText());
             s.setEndereco(this.txtEndereco.getText());
+            s.setTelefone(this.txtTelefone.getText());
             
             if (Funciones.isRegister(s)) {
                 setClean();

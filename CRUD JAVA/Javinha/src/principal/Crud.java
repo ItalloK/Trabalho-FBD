@@ -262,7 +262,7 @@ public class Crud extends javax.swing.JFrame {
         f.txtUsuario.setText(tabla.getValueAt(fila, 2).toString());
         f.txtSenha.setText(tabla.getValueAt(fila, 3).toString());
         f.txtEndereco.setText(tabla.getValueAt(fila, 4).toString());
-        f.txtTelefone.setText(tabla.getValueAt(fila, 4).toString());
+        f.txtTelefone.setText(tabla.getValueAt(fila, 5).toString());
         
         //f.txtEndereco.setText(tabla.getValueAt(fila, 4).toString());
         

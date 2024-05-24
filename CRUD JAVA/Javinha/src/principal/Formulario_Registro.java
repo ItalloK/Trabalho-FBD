@@ -220,6 +220,7 @@ public class Formulario_Registro extends javax.swing.JDialog {
             s.setEmail(this.txtUsuario.getText());
             s.setIdade(this.txtSenha.getText());
             s.setEndereco(this.txtEndereco.getText());
+            s.setTelefone(this.txtTelefone.getText());
             
             if (Funciones.isRegister(s)) {
                 setClean();
