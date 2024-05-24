@@ -7,13 +7,15 @@ public class Sentencias {
     public static String REGISTRAR = "INSERT INTO usuarios ("
             + "Nome, "
             + "Email, "
-            + "Idade ) "
-            + "VALUES(?,?,?)";
+            + "Idade, "
+            + "Endereco ) "
+            + "VALUES(?,?,?,?)";
     
     public static String ATUALIZAR = "UPDATE usuarios SET "
             + "Nome = ?, "
             + "Email = ?, "
-            + "Idade = ? "
+            + "Idade = ?, "
+            + "Endereco = ? "
             + "WHERE id = ?";
     
     public static String ELIMINAR = "DELETE FROM usuarios WHERE id = ?";
@@ -24,6 +26,7 @@ public class Sentencias {
     private String Nome;
     private String Email;
     private String Idade;
+    private String Endereco;
 
     public String getId() {
         return Id;
@@ -56,6 +59,16 @@ public class Sentencias {
     public void setIdade(String Idade) {
         this.Idade = Idade;
     }
+    
+    public String getEndereco() {
+        return Endereco;
+    }
+
+    public void setEndereco(String Endereco) {
+        this.Endereco = Endereco;
+    }
+    
+    
     
     
 }

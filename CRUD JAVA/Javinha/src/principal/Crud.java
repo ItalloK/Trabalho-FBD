@@ -97,11 +97,11 @@ public class Crud extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "NOME", "EMAIL", "DATA DE NASCIMENTO"
+                "ID", "NOME", "EMAIL", "DATA DE NASCIMENTO", "ENDEREÇO"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false
+                false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -215,16 +215,14 @@ public class Crud extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btn_novo, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnDeletarTudo, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtBuscar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)
+                    .addComponent(jLabel3))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -263,6 +261,10 @@ public class Crud extends javax.swing.JFrame {
         f.txtNome.setText(tabla.getValueAt(fila, 1).toString());
         f.txtUsuario.setText(tabla.getValueAt(fila, 2).toString());
         f.txtSenha.setText(tabla.getValueAt(fila, 3).toString());
+        f.txtEndereco.setText(tabla.getValueAt(fila, 4).toString());
+        
+        //f.txtEndereco.setText(tabla.getValueAt(fila, 4).toString());
+        
         f.lblid.setText(tabla.getValueAt(fila, 0).toString());
         f.setVisible(true);
     }//GEN-LAST:event_btnEditarActionPerformed
