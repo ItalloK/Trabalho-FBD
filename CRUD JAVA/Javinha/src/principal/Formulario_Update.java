@@ -351,7 +351,7 @@ public class Formulario_Update extends javax.swing.JDialog {
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         
         if (this.txtNome.getText().length() == 0 || this.txtSenha.getText().length() == 0
-                || this.txtUsuario.getText().length() == 0) {
+                || this.txtUsuario.getText().length() == 0 || this.txtEndereco.getText().length() == 0) {
             this.lblError.setText("*TODOS OS CAMPOS SÃO OBRIGATÓRIOS*");
         } else {
             
