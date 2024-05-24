@@ -8,14 +8,16 @@ public class Sentencias {
             + "Nome, "
             + "Email, "
             + "Idade, "
-            + "Endereco ) "
-            + "VALUES(?,?,?,?)";
+            + "Endereco, "
+            + "Telefone ) "
+            + "VALUES(?,?,?,?,?)";
     
     public static String ATUALIZAR = "UPDATE usuarios SET "
             + "Nome = ?, "
             + "Email = ?, "
             + "Idade = ?, "
-            + "Endereco = ? "
+            + "Endereco = ?, "
+            + "Telefone = ? "
             + "WHERE id = ?";
     
     public static String ELIMINAR = "DELETE FROM usuarios WHERE id = ?";
@@ -27,6 +29,7 @@ public class Sentencias {
     private String Email;
     private String Idade;
     private String Endereco;
+    private String Telefone;
 
     public String getId() {
         return Id;
@@ -66,6 +69,14 @@ public class Sentencias {
 
     public void setEndereco(String Endereco) {
         this.Endereco = Endereco;
+    }
+    
+    public String getTelefone() {
+        return Telefone;
+    }
+
+    public void setTelefone(String Telefone) {
+        this.Telefone = Telefone;
     }
     
     

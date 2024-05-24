@@ -24,6 +24,7 @@ public class Funciones {
             ps.setString(2, s.getEmail());
             ps.setString(3, s.getIdade());
             ps.setString(4, s.getEndereco());
+            ps.setString(5, s.getTelefone());
             ps.executeUpdate();
             return true;
         } catch (SQLException ex) {
@@ -40,7 +41,8 @@ public class Funciones {
             ps.setString(2, s.getEmail());
             ps.setString(3, s.getIdade());
             ps.setString(4, s.getEndereco());
-            ps.setString(5, s.getId());
+            ps.setString(5, s.getTelefone());
+            ps.setString(6, s.getId());
             
             
             ps.executeUpdate();
@@ -92,11 +94,12 @@ public class Funciones {
                     + "Nome LIKE'%" + buscar + "%' OR "
                     + "Email LIKE'%" + buscar + "%' OR "
                     + "Idade LIKE'%" + buscar + "%' OR "
-                    + "Endereco LIKE'%" + buscar + "%'"
+                    + "Endereco LIKE'%" + buscar + "%' OR "
+                    + "Telefone LIKE'%" + buscar + "%'"
                     + ")";
         }
         
-        String datos[] = new String[5];
+        String datos[] = new String[6];
         try {
             Statement st = connection.createStatement(); 
             ResultSet rs = st.executeQuery(sql);
@@ -107,6 +110,7 @@ public class Funciones {
                 datos[2] = rs.getString("Email");
                 datos[3] = rs.getString("Idade");
                 datos[4] = rs.getString("Endereco");
+                datos[5] = rs.getString("Telefone");
                 modelo.addRow(datos);
             }
             

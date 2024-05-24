@@ -97,11 +97,11 @@ public class Crud extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "NOME", "EMAIL", "DATA DE NASCIMENTO", "ENDEREÇO"
+                "ID", "NOME", "EMAIL", "DATA DE NASCIMENTO", "ENDEREÇO", "TELEFONE"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -262,6 +262,7 @@ public class Crud extends javax.swing.JFrame {
         f.txtUsuario.setText(tabla.getValueAt(fila, 2).toString());
         f.txtSenha.setText(tabla.getValueAt(fila, 3).toString());
         f.txtEndereco.setText(tabla.getValueAt(fila, 4).toString());
+        f.txtTelefone.setText(tabla.getValueAt(fila, 4).toString());
         
         //f.txtEndereco.setText(tabla.getValueAt(fila, 4).toString());
         
