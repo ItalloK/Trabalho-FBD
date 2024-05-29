@@ -19,6 +19,13 @@ public class Crud extends javax.swing.JFrame {
      */
     public Crud() {
         initComponents();
+        
+        /*rsutilities.RSUtilities.setCentrarVentana(this);
+        rsutilities.RSUtilities.setMoverVentana(this);
+        rsutilities.RSUtilities.setOpaqueVentana(this, false);*/
+        
+        // para a função acima funcionar, ativar o undecorated no painel
+        
         setLocationRelativeTo(null);
         Funciones.setListar("");
 
