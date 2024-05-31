@@ -1,23 +1,17 @@
--- Deletar um cliente específico
-DELETE FROM `Oficina_Ruddy`.`Clientes`
-WHERE `idClientes` = 1;
+-- Exclusão da tabela Clientes
+DELETE FROM `Clientes` WHERE `idClientes` = 4;
 
--- Deletar um carro específico
-DELETE FROM `Oficina_Ruddy`.`Carros`
-WHERE `idCarros` = 1;
+-- Exclusão da tabela Carros
+DELETE FROM `Carros` WHERE `idCarros` = 3;
 
--- Deletar um funcionário específico
-DELETE FROM `Oficina_Ruddy`.`Funcionarios`
-WHERE `idFuncionarios` = 1;
+-- Exclusão da tabela Funcionarios
+DELETE FROM `Funcionarios` WHERE `idFuncionarios` = 5;
 
--- Deletar uma peça específica
-DELETE FROM `Oficina_Ruddy`.`Pecas`
-WHERE `idPecas` = 1;
+-- Exclusão da tabela Pecas
+DELETE FROM `Pecas` WHERE `idPecas` = 2;
 
--- Deletar um serviço específico
-DELETE FROM `Oficina_Ruddy`.`Servicos`
-WHERE `idServicos` = 1;
+-- Exclusão da tabela Servicos
+DELETE FROM `Servicos` WHERE `idServicos` = 5;
 
--- Deletar uma ordem de serviço específica
-DELETE FROM `Oficina_Ruddy`.`OrdemDeServico`
-WHERE `idOrdemDeServico` = 1;
+-- Exclusão da tabela OrdemDeServico
+DELETE FROM `OrdemDeServico` WHERE `idOrdemDeServico` = 1;
