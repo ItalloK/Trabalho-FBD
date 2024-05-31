@@ -1,0 +1,44 @@
+-- Atualizar todos os campos de um cliente específico
+UPDATE `Oficina_Ruddy`.`Clientes`
+SET `NomeCliente` = 'João Souza', 
+    `TelCliente` = '999888777', 
+    `ClienteVIP` = 1,
+    `Carros_idCarros` = 2
+WHERE `idClientes` = 1;
+
+-- Atualizar todos os campos de um carro específico
+UPDATE `Oficina_Ruddy`.`Carros`
+SET `ModeloCarro` = 'Honda Accord', 
+    `PlacaCarro` = 'XYZ1234', 
+    `Clientes_idClientes` = 2
+WHERE `idCarros` = 1;
+
+-- Atualizar todos os campos de um funcionário específico
+UPDATE `Oficina_Ruddy`.`Funcionarios`
+SET `NomeFuncionario` = 'Pedro Almeida', 
+    `TelefoneFuncionario` = '666555444',
+    `Servicos_idServicos` = 2
+WHERE `idFuncionarios` = 1;
+
+-- Atualizar todos os campos de uma peça específica
+UPDATE `Oficina_Ruddy`.`Pecas`
+SET `NomePeca` = 'Filtro de Combustível', 
+    `TipoPeca` = 'Filtro'
+WHERE `idPecas` = 1;
+
+-- Atualizar todos os campos de um serviço específico
+UPDATE `Oficina_Ruddy`.`Servicos`
+SET `TipoDeServico` = 'Alinhamento e Balanceamento', 
+    `TempoDoServico` = '60 minutos', 
+    `ValorPeca` = 100.00, 
+    `Funcionarios_idFuncionarios` = 2, 
+    `Carros_idCarros` = 2, 
+    `Pecas_idPecas` = 2,
+    `Servicos_idServicos` = 2
+WHERE `idServicos` = 1;
+
+-- Atualizar todos os campos de uma ordem de serviço específica
+UPDATE `Oficina_Ruddy`.`OrdemDeServico`
+SET `Data` = '2024-06-01 10:00:00', 
+    `Servicos_idServicos` = 2
+WHERE `idOrdemDeServico` = 1;

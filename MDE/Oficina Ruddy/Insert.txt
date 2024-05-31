@@ -1,0 +1,47 @@
+-- Adicionar novos clientes
+INSERT INTO `Oficina_Ruddy`.`Clientes` (`idClientes`, `NomeCliente`, `TelCliente`, `ClienteVIP`, `Carros_idCarros`) VALUES 
+(1, 'João Silva', '123456789', 0, 1),
+(2, 'Maria Oliveira', '987654321', 1, 2),
+(3, 'Carlos Souza', '456789123', 0, 3),
+(4, 'Ana Pereira', '789123456', 1, 4),
+(5, 'Lucas Lima', '321654987', 0, 5);
+
+-- Adicionar novos carros
+INSERT INTO `Oficina_Ruddy`.`Carros` (`idCarros`, `ModeloCarro`, `PlacaCarro`, `Clientes_idClientes`) VALUES 
+(1, 'Honda Civic', 'ABC1234', 1),
+(2, 'Toyota Corolla', 'DEF5678', 2),
+(3, 'Ford Focus', 'GHI9012', 3),
+(4, 'Chevrolet Cruze', 'JKL3456', 4),
+(5, 'Volkswagen Golf', 'MNO7890', 5);
+
+-- Adicionar novos funcionários
+INSERT INTO `Oficina_Ruddy`.`Funcionarios` (`idFuncionarios`, `NomeFuncionario`, `TelefoneFuncionario`, `Servicos_idServicos`) VALUES 
+(1, 'Pedro Costa', '555555555', 1),
+(2, 'Lucas Martins', '444444444', 2),
+(3, 'Mariana Alves', '333333333', 3),
+(4, 'Fernando Ferreira', '222222222', 4),
+(5, 'Aline Rocha', '111111111', 5);
+
+-- Adicionar novas peças
+INSERT INTO `Oficina_Ruddy`.`Pecas` (`idPecas`, `NomePeca`, `TipoPeca`) VALUES 
+(1, 'Filtro de Óleo', 'Filtro'),
+(2, 'Pneu', 'Roda'),
+(3, 'Pastilha de Freio', 'Freio'),
+(4, 'Bateria', 'Elétrico'),
+(5, 'Velas de Ignição', 'Ignição');
+
+-- Adicionar novos serviços
+INSERT INTO `Oficina_Ruddy`.`Servicos` (`idServicos`, `TipoDeServico`, `TempoDoServico`, `ValorPeca`, `Funcionarios_idFuncionarios`, `Carros_idCarros`, `Pecas_idPecas`, `Servicos_idServicos`) VALUES 
+(1, 'Troca de Óleo', '30 minutos', 50.00, 1, 1, 1, 1),
+(2, 'Troca de Pneu', '45 minutos', 200.00, 2, 2, 2, 2),
+(3, 'Troca de Pastilha de Freio', '60 minutos', 150.00, 3, 3, 3, 3),
+(4, 'Substituição de Bateria', '20 minutos', 300.00, 4, 4, 4, 4),
+(5, 'Troca de Velas', '40 minutos', 100.00, 5, 5, 5, 5);
+
+-- Adicionar nova ordem de serviço
+INSERT INTO `Oficina_Ruddy`.`OrdemDeServico` (`idOrdemDeServico`, `Data`, `Servicos_idServicos`) VALUES 
+(1, '2024-05-30 10:00:00', 1),
+(2, '2024-05-30 11:00:00', 2),
+(3, '2024-05-30 12:00:00', 3),
+(4, '2024-05-30 13:00:00', 4),
+(5, '2024-05-30 14:00:00', 5);
